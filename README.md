@@ -11,8 +11,8 @@
 </p>
 
 Demo:
-- [Netlify]()
-- [Youtube](https://www.youtube.com/watch?v=OwuVWcynFQ8&feature=youtu.be)
+- [Netlify](https://objective-golick-82597b.netlify.app)
+- [Youtube](https://www.youtube.com/watch?v=OwuVWcynFQ8)
 
 ## Contribute
 
