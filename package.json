@@ -1,0 +1,62 @@
+{
+  "name": "jobs",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A simple electron app to finds job in a region.",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "dist": "vue-cli-service electron:build --publish=never",
+    "pack": "vue-cli-service electron:build --dir",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:generate-icons": "electron-icon-builder --input=./public/icon.png --output=build --flatten",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "core-js": "^3.6.5",
+    "debug": "^4.2.0",
+    "file-saver": "^2.0.2",
+    "linkedin-jobs-scraper": "^1.6.1",
+    "lunr": "^2.3.8",
+    "minify-css-string": "^1.0.0",
+    "nano": "^8.2.2",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.5.0",
+    "vue-router": "^3.3.4",
+    "vuetify": "^2.3.3",
+    "vuex": "^3.5.1",
+    "xlsx": "^0.16.6"
+  },
+  "devDependencies": {
+    "@mdi/font": "^4.9.95",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-plugin-pwa": "^4.4.6",
+    "@vue/cli-plugin-router": "^4.4.6",
+    "@vue/cli-plugin-vuex": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "babel-eslint": "^10.1.0",
+    "electron": "^8.3.4",
+    "electron-icon-builder": "^1.0.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.0",
+    "sass": "^1.26.9",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-electron-builder": "^1.4.6",
+    "vue-cli-plugin-vuetify": "^2.0.6",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.5.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josselinlbe/jobs.git"
+  }
+}
