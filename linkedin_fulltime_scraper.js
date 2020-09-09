@@ -72,25 +72,25 @@ const { LinkedinScraper, events } = require("linkedin-jobs-scraper");
 
   // Run queries concurrently
   await Promise.all([
-    scraper.run("développeur backend", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Toulouse", {
       paginationMax: 2
     }),
-    scraper.run("développeur frontend", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Pyrénées", {
       paginationMax: 2
     }),
-    scraper.run("développeur web", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Landes", {
       paginationMax: 2
     }),
-    scraper.run("osint", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Bordeaux", {
       paginationMax: 2
     }),
-    scraper.run("forensic", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Pau", {
       paginationMax: 2
     }),
-    scraper.run("administrateur système", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Dax", {
       paginationMax: 2
     }),
-    scraper.run("devops", "Toulouse", {
+    scraper.run('("contrôle de gestion")', "Bayonne", {
       paginationMax: 2
     })
   ]);
