@@ -113,7 +113,7 @@ export default {
   },
   data: () => ({
     countFullTime: LinkedinFullTime.data.length,
-    countIntern: LinkedinIntern.data.length,
+    countIntern: 0,
     dateFullTime: LinkedinFullTime.time,
     dateIntern: LinkedinIntern.time,
     drawer: false,
@@ -158,7 +158,7 @@ export default {
      getJobs: function() {
       try {
         this.$store.commit("addDataArray", LinkedinFullTime.data);
-        this.$store.commit("addDataArray", LinkedinIntern.data);
+        // this.$store.commit("addDataArray", LinkedinIntern.data);
       } catch (error) {
         this.$store.dispatch("infoBridge", {
           color: "error",
